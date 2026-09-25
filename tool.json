@@ -1,0 +1,213 @@
+{
+  "tool": {
+    "id": "has-bled",
+    "title": "HAS-BLED",
+    "short": "Risco de sangramento com anticoagulação",
+    "spec": [
+      "cardiologia",
+      "hematologia-e-hemoterapia",
+      "clinica-medica"
+    ],
+    "desc": "Calculadora HAS-BLED: risco de sangramento maior em 1 ano em pacientes com fibrilação atrial anticoagulados, com os fatores modificáveis destacados.",
+    "lead": "Estima o risco de sangramento maior em 1 ano em pacientes com fibrilação atrial em anticoagulação e aponta os fatores que podem ser corrigidos.",
+    "fields": [
+      [
+        "h",
+        "Hipertensão não controlada (PAS &gt; 160 mmHg)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "rim",
+        "Função renal alterada (diálise, transplante ou creatinina ≥ 2,26 mg/dL)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "fig",
+        "Função hepática alterada (cirrose ou bilirrubina &gt; 2× e AST/ALT &gt; 3× o normal)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "avc",
+        "AVC prévio",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "sang",
+        "Sangramento prévio ou predisposição (anemia, plaquetopenia)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "inr",
+        "INR lábil (tempo na faixa terapêutica &lt; 60%)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "idoso",
+        "Idade &gt; 65 anos",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "drogas",
+        "Antiagregante ou anti-inflamatório",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "alcool",
+        "Álcool (≥ 8 doses por semana)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "formula": "<p>Um ponto para cada item: <strong>H</strong>ipertensão, função renal/hepática <strong>A</strong>lterada (1 cada), <strong>S</strong>troke (AVC), <strong>B</strong>leeding (sangramento), <strong>L</strong>abile INR, <strong>E</strong>lderly (&gt; 65), <strong>D</strong>rugs/álcool (1 cada). Máximo: 9.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Sangramento maior (por 100 pacientes-ano)"
+      ],
+      [
+        "0",
+        "1,13"
+      ],
+      [
+        "1",
+        "1,02"
+      ],
+      [
+        "2",
+        "1,88"
+      ],
+      [
+        "3",
+        "3,74"
+      ],
+      [
+        "4",
+        "8,70"
+      ],
+      [
+        "5",
+        "12,50"
+      ]
+    ],
+    "table_note": "Coorte de validação de Pisters 2010. Escore ≥ 3 = alto risco de sangramento.",
+    "tips": [
+      "Escore ≥ 3 pede revisão mais frequente e correção dos fatores modificáveis: pressão, INR lábil, antiagregantes/AINEs e álcool.",
+      "Não use o HAS-BLED isoladamente para negar anticoagulação: o benefício sobre o AVC costuma superar o risco de sangramento.",
+      "Em quem usa varfarina com INR lábil, considere trocar por anticoagulante direto."
+    ],
+    "sources": [
+      [
+        "Pisters R et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest, 2010.",
+        "https://doi.org/10.1378/chest.10-0134"
+      ],
+      [
+        "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024.",
+        "https://doi.org/10.1093/eurheartj/ehae176"
+      ]
+    ],
+    "cases": [
+      [
+        "Todos os itens: 9 pontos, alto risco",
+        {
+          "h": true,
+          "rim": true,
+          "fig": true,
+          "avc": true,
+          "sang": true,
+          "inr": true,
+          "idoso": true,
+          "drogas": true,
+          "alcool": true
+        },
+        {
+          "raw": {
+            "score": 9
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        {
+          "h": true,
+          "avc": true,
+          "idoso": true
+        },
+        {
+          "raw": {
+            "score": 3
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Nenhum fator: 0 ponto, risco baixo",
+        [],
+        {
+          "raw": {
+            "score": 0
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}

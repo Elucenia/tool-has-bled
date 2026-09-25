@@ -1,0 +1,66 @@
+[
+  {
+    "label": "Todos os itens: 9 pontos, alto risco",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "raw": {
+        "score": 9
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+    "input": {
+      "h": true,
+      "avc": true,
+      "idoso": true
+    },
+    "expected": {
+      "raw": {
+        "score": 3
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "h": true,
+      "avc": true,
+      "idoso": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Nenhum fator: 0 ponto, risco baixo",
+    "input": {},
+    "expected": {
+      "raw": {
+        "score": 0
+      },
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  }
+]
