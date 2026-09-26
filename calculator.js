@@ -1,11 +1,11 @@
-/* tool-has-bled · Elucenia · https://github.com/Elucenia/tool-has-bled
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-has-bled · ELUCENIA · https://github.com/Elucenia/tool-has-bled
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"has-bled","title":"HAS-BLED","fields":[["h","Hipertensão não controlada (PAS &gt; 160 mmHg)","chk",{"pts":1}],["rim","Função renal alterada (diálise, transplante ou creatinina ≥ 2,26 mg/dL)","chk",{"pts":1}],["fig","Função hepática alterada (cirrose ou bilirrubina &gt; 2× e AST/ALT &gt; 3× o normal)","chk",{"pts":1}],["avc","AVC prévio","chk",{"pts":1}],["sang","Sangramento prévio ou predisposição (anemia, plaquetopenia)","chk",{"pts":1}],["inr","INR lábil (tempo na faixa terapêutica &lt; 60%)","chk",{"pts":1}],["idoso","Idade &gt; 65 anos","chk",{"pts":1}],["drogas","Antiagregante ou anti-inflamatório","chk",{"pts":1}],["alcool","Álcool (≥ 8 doses por semana)","chk",{"pts":1}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};

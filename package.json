@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-has-bled",
   "version": "0.1.0",
-  "description": "HAS-BLED · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "HAS-BLED · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
