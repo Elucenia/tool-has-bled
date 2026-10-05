@@ -1,0 +1,209 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean h",
+    "input": {
+      "h": "2",
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "h"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean rim",
+    "input": {
+      "h": true,
+      "rim": "2",
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rim"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean fig",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": "2",
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "fig"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean avc",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": "2",
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "avc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean sang",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": "2",
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "sang"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean inr",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": "2",
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "inr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idoso",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": "2",
+      "drogas": true,
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idoso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean drogas",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": "2",
+      "alcool": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "drogas"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean alcool",
+    "input": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "alcool"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

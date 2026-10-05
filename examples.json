@@ -1,6 +1,20 @@
 [
   {
-    "label": "Todos os itens: 9 pontos, alto risco",
+    "id": "has-bled",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Todos os itens: 9 pontos, alto risco",
+    "originalInput": {
+      "h": true,
+      "rim": true,
+      "fig": true,
+      "avc": true,
+      "sang": true,
+      "inr": true,
+      "idoso": true,
+      "drogas": true,
+      "alcool": true
+    },
     "input": {
       "h": true,
       "rim": true,
@@ -18,25 +32,45 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "h": true,
-      "rim": true,
-      "fig": true,
-      "avc": true,
-      "sang": true,
-      "inr": true,
-      "idoso": true,
-      "drogas": true,
-      "alcool": true
+    "recordedResult": {
+      "main": [
+        "9",
+        "pontos"
+      ],
+      "label": "HAS-BLED",
+      "raw": {
+        "score": 9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
-    "input": {
+    "id": "has-bled",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+    "originalInput": {
       "h": true,
       "avc": true,
       "idoso": true
+    },
+    "input": {
+      "h": true,
+      "avc": true,
+      "idoso": true,
+      "rim": false,
+      "fig": false,
+      "sang": false,
+      "inr": false,
+      "drogas": false,
+      "alcool": false
     },
     "expected": {
       "raw": {
@@ -44,23 +78,65 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "h": true,
-      "avc": true,
-      "idoso": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "HAS-BLED",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Nenhum fator: 0 ponto, risco baixo",
-    "input": {},
+    "id": "has-bled",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Nenhum fator: 0 ponto, risco baixo",
+    "originalInput": [],
+    "input": {
+      "h": false,
+      "rim": false,
+      "fig": false,
+      "avc": false,
+      "sang": false,
+      "inr": false,
+      "idoso": false,
+      "drogas": false,
+      "alcool": false
+    },
     "expected": {
       "raw": {
         "score": 0
       },
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "HAS-BLED",
+      "raw": {
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

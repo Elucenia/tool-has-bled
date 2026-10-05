@@ -3,124 +3,71 @@
     "id": "has-bled",
     "title": "HAS-BLED",
     "short": "Risco de sangramento com anticoagulação",
+    "desc": "Calculadora HAS-BLED: risco de sangramento maior em 1 ano em pacientes com fibrilação atrial anticoagulados, com os fatores modificáveis destacados.",
+    "lead": "Estima o risco de sangramento maior em 1 ano em pacientes com fibrilação atrial em anticoagulação e aponta os fatores que podem ser corrigidos.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "hematologia-e-hemoterapia",
       "clinica-medica"
     ],
-    "desc": "Calculadora HAS-BLED: risco de sangramento maior em 1 ano em pacientes com fibrilação atrial anticoagulados, com os fatores modificáveis destacados.",
-    "lead": "Estima o risco de sangramento maior em 1 ano em pacientes com fibrilação atrial em anticoagulação e aponta os fatores que podem ser corrigidos.",
     "fields": [
       [
         "h",
         "Hipertensão não controlada (PAS &gt; 160 mmHg)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "rim",
         "Função renal alterada (diálise, transplante ou creatinina ≥ 2,26 mg/dL)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "fig",
         "Função hepática alterada (cirrose ou bilirrubina &gt; 2× e AST/ALT &gt; 3× o normal)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "avc",
         "AVC prévio",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "sang",
         "Sangramento prévio ou predisposição (anemia, plaquetopenia)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "inr",
         "INR lábil (tempo na faixa terapêutica &lt; 60%)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "idoso",
         "Idade &gt; 65 anos",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "drogas",
         "Antiagregante ou anti-inflamatório",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "alcool",
         "Álcool (≥ 8 doses por semana)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
     "formula": "<p>Um ponto para cada item: <strong>H</strong>ipertensão, função renal/hepática <strong>A</strong>lterada (1 cada), <strong>S</strong>troke (AVC), <strong>B</strong>leeding (sangramento), <strong>L</strong>abile INR, <strong>E</strong>lderly (&gt; 65), <strong>D</strong>rugs/álcool (1 cada). Máximo: 9.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Sangramento maior (por 100 pacientes-ano)"
-      ],
-      [
-        "0",
-        "1,13"
-      ],
-      [
-        "1",
-        "1,02"
-      ],
-      [
-        "2",
-        "1,88"
-      ],
-      [
-        "3",
-        "3,74"
-      ],
-      [
-        "4",
-        "8,70"
-      ],
-      [
-        "5",
-        "12,50"
-      ]
-    ],
-    "table_note": "Coorte de validação de Pisters 2010. Escore ≥ 3 = alto risco de sangramento.",
-    "tips": [
-      "Escore ≥ 3 pede revisão mais frequente e correção dos fatores modificáveis: pressão, INR lábil, antiagregantes/AINEs e álcool.",
-      "Não use o HAS-BLED isoladamente para negar anticoagulação: o benefício sobre o AVC costuma superar o risco de sangramento.",
-      "Em quem usa varfarina com INR lábil, considere trocar por anticoagulante direto."
-    ],
     "sources": [
       [
         "Pisters R et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest, 2010.",
@@ -177,9 +124,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -188,17 +132,498 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T17:23:41.449Z",
+      "total": 512,
+      "passed": 512,
+      "sourceRowCount": 512,
+      "uniqueApiInputCount": 512,
+      "sourceContextCount": 512,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "4af9e9eeef0bb54234cb467e50118078610b9e201e5200074fac51c411ee1d29",
+        "total": 512,
+        "bankRowCount": 512,
+        "uniqueApiInputCount": 512,
+        "sourceContextCount": 512,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          },
+          {
+            "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+            "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+          "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+        },
+        "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 512,
+        "uniqueApiInputs": 512,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+          "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+        }
+      },
+      "scope": "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+      "sources": [
+        {
+          "id": "has-bled",
+          "declaredEdition": "Pisters2010 with currentESC context",
+          "numericEvidenceEdition": "Original2010 Methods/Table2",
+          "url": "https://www.acforum-excellence.org/sites/default/files/Pisters.HAS-BLED.pdf",
+          "doi": "10.1378/chest.10-0134",
+          "access": "OriginalCHEST2010 PDF downloaded fromACForum; Methods printed1094 and Tables1/2 printed1095 visually inspected. Source permission restrictions are explicit and are not approved here.",
+          "readScope": [
+            "OriginalMethods/definitions, PDFp3/printed1094",
+            "OriginalTables1/2 and adjacent results, PDFp4/printed1095"
+          ],
+          "notVerified": [
+            "Raw renal/hepatic/alcohol eligibility and rounded creatinine2.26 threshold",
+            "ESC2024 complete guideline, cohort risk percentages, clinical management or source permissions"
+          ],
+          "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+          "sourceFindings": [
+            {
+              "status": "definition-difference",
+              "detail": "Original liver definition includes alkalinephosphatase with AST/ALT, unlike current abbreviated field. The original article includes differing>8/≥8 alcohol phrasing across contexts; current≥8doses is not certified as an exact drink-gram definition."
+            }
+          ]
+        }
+      ],
+      "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+      "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+      "originalEvidence": {
+        "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+        "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+      },
+      "independentPeer": {
+        "status": "passed",
+        "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+        "recordedAt": "2026-10-04T18:58:10.902Z",
+        "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+        "previousStatus": {
+          "status": "pending",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+        },
+        "peer": {
+          "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+          "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+          "summary": {
+            "checks": 55762,
+            "failed": 0,
+            "helperAssertions": 50346,
+            "sourceRows": 6947,
+            "uniqueInputObjects": 6947,
+            "freshNodeExecutions": 20841,
+            "methods": 137,
+            "allSourceRows": 60865,
+            "allUniqueInputs": 60792,
+            "allDuplicateRows": 73
+          },
+          "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+        },
+        "application": {
+          "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+          "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+        },
+        "reviewedBankScope": "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "currentBinding": {
+          "source26BankSha256": "785d0b38b826311617e8a88b810b3a06c6b49d7609f255e51a307da9df8f6097",
+          "implementations": [
+            {
+              "file": "apps/website/private/tool-code/has-bled/calculator.js",
+              "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+            },
+            {
+              "file": "apps/dashboard/private/tool-code/has-bled/calculator.js",
+              "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+            },
+            {
+              "file": "apps/command-center/private/tool-code/has-bled/calculator.js",
+              "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+            }
+          ],
+          "subsequentReviewedRebinds": []
+        },
+        "originalFailuresAndScopeQualificationsPreserved": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 1536,
+      "actualVmExecutions": 1536,
+      "implementations": [
+        {
+          "app": "website",
+          "id": "has-bled",
+          "file": "apps/website/private/tool-code/has-bled/calculator.js",
+          "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+        },
+        {
+          "app": "dashboard",
+          "id": "has-bled",
+          "file": "apps/dashboard/private/tool-code/has-bled/calculator.js",
+          "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+        },
+        {
+          "app": "command-center",
+          "id": "has-bled",
+          "file": "apps/command-center/private/tool-code/has-bled/calculator.js",
+          "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+        }
+      ],
+      "qualifications": [
+        "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+        "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+        "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "HASBLED/Pisters 2010:9 pontos; renal/hepático/drogas/álcoolseparados; contexto ESC 2024",
+    "implementationVersion": "has-bled@native-2026-10-03+959eb61ec254",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20299623/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada item: H ipertensão, função renal/hepática A lterada (1 cada), S troke (AVC), B leeding (sangramento), L abile INR, E lderly (> 65), D rugs/álcool (1 cada). Máximo: 9.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "h",
+            "label": "Hipertensão não controlada (PAS &gt; 160 mmHg)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rim",
+            "label": "Função renal alterada (diálise, transplante ou creatinina ≥ 2,26 mg/dL)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "fig",
+            "label": "Função hepática alterada (cirrose ou bilirrubina &gt; 2× e AST/ALT &gt; 3× o normal)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "avc",
+            "label": "AVC prévio",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sang",
+            "label": "Sangramento prévio ou predisposição (anemia, plaquetopenia)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "inr",
+            "label": "INR lábil (tempo na faixa terapêutica &lt; 60%)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "idoso",
+            "label": "Idade &gt; 65 anos",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "drogas",
+            "label": "Antiagregante ou anti-inflamatório",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "alcool",
+            "label": "Álcool (≥ 8 doses por semana)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "0955faf95d37de852bc460cd656b9f67d2fa3aacc8046e541088f03a45161b88"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Pisters R et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest, 2010.",
+          "url": "https://doi.org/10.1378/chest.10-0134",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation: the Euro Heart Survey.",
+            "year": "2010",
+            "firstPublicationDate": "2010-03-18",
+            "doi": "10.1378/chest.10-0134",
+            "pmid": "20299623",
+            "journal": "Chest",
+            "authors": "Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJ, Lip GY."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/20299623/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "2b49e6f8f91737e8874195b5f300651f4d7a975092a33bc5dce996a4bc344406",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Van Gelder IC et al. 2024 ESC Guidelines for the management of atrial fibrillation. Eur Heart J, 2024.",
+          "url": "https://doi.org/10.1093/eurheartj/ehae176",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with the European Association for Cardio-Thoracic Surgery (EACTS).",
+            "year": "2024",
+            "firstPublicationDate": "2024-09-01",
+            "doi": "10.1093/eurheartj/ehae176",
+            "pmid": "39210723",
+            "journal": "European heart journal",
+            "authors": "Van Gelder IC, Rienstra M, Bunting KV, Casado-Arroyo R, Caso V, Crijns HJGM, De Potter TJR, Dwight J, Guasti L, Hanke T, Jaarsma T, Lettino M, Løchen ML, Lumbers RT, Maesen B, Mølgaard I, Rosano GMC, Sanders P, Schnabel RB, Suwalski P, Svennberg E, Tamargo J, Tica O, Traykov V, Tzeis S, Kotecha D, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/39210723/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T17:23:41.449Z",
+        "total": 512,
+        "passed": 512,
+        "sourceRowCount": 512,
+        "uniqueApiInputCount": 512,
+        "sourceContextCount": 512,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "4af9e9eeef0bb54234cb467e50118078610b9e201e5200074fac51c411ee1d29",
+          "total": 512,
+          "bankRowCount": 512,
+          "uniqueApiInputCount": 512,
+          "sourceContextCount": 512,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+              "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+            },
+            {
+              "file": "reports/review-20261003/eight-organ-functional-independent-expectations-final26.json",
+              "sha256": "441cc3061db085da51adbe70aea27a87b1a0266488513a4942d3a9abd9f5a766"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+            "sha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80"
+          },
+          "packagingRequirement": "Compose reviewed source/label hashes plus metadata and freeze26 before package generation."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 512,
+          "uniqueApiInputs": 512,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/eight-organ-publication-independent-expectations-final26.json",
+            "sha256": "5b80f57281b79c15458b473abed56f641541206eb50de44726b2a078072b1288"
+          }
+        },
+        "scope": "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+        "sources": [
+          {
+            "id": "has-bled",
+            "declaredEdition": "Pisters2010 with currentESC context",
+            "numericEvidenceEdition": "Original2010 Methods/Table2",
+            "url": "https://www.acforum-excellence.org/sites/default/files/Pisters.HAS-BLED.pdf",
+            "doi": "10.1378/chest.10-0134",
+            "access": "OriginalCHEST2010 PDF downloaded fromACForum; Methods printed1094 and Tables1/2 printed1095 visually inspected. Source permission restrictions are explicit and are not approved here.",
+            "readScope": [
+              "OriginalMethods/definitions, PDFp3/printed1094",
+              "OriginalTables1/2 and adjacent results, PDFp4/printed1095"
+            ],
+            "notVerified": [
+              "Raw renal/hepatic/alcohol eligibility and rounded creatinine2.26 threshold",
+              "ESC2024 complete guideline, cohort risk percentages, clinical management or source permissions"
+            ],
+            "sourceComponent": "Selected point total; SOFA additional six representative/unambiguous component outputs only",
+            "sourceFindings": [
+              {
+                "status": "definition-difference",
+                "detail": "Original liver definition includes alkalinephosphatase with AST/ALT, unlike current abbreviated field. The original article includes differing>8/≥8 alcohol phrasing across contexts; current≥8doses is not certified as an exact drink-gram definition."
+              }
+            ]
+          }
+        ],
+        "evidencePath": "reports/review-20261003/eight-organ-source-bank-independent-check-final26.json",
+        "evidenceSha256": "def1101195ee4fab702761b71118d0da1fb7a7cbbb97ad9dbcf71c694bfaea80",
+        "originalEvidence": {
+          "file": "reports/review-20261003/eight-organ-functional-independent-source-check-final26.json",
+          "sha256": "591c331b87a338053921efb483bd7e23b1741285439c4bbce0e3e6fd4918f751"
+        },
+        "independentPeer": {
+          "status": "passed",
+          "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned.",
+          "recordedAt": "2026-10-04T18:58:10.902Z",
+          "scope": "Existing independent technical complete-bank/metadata/helper peer recorded after guarded source26 application. This status does not certify clinical eligibility, full instrument conformance, professional translation or source rights; no new arithmetic/browser execution is claimed by this metadata amendment.",
+          "previousStatus": {
+            "status": "pending",
+            "requiredScope": "Independent bank/metadata/helper review; source label/version/UN/distance patches are separately owned."
+          },
+          "peer": {
+            "file": "reports/review-20261003/eight-organ-source-banks-root-peer-final26.json",
+            "sha256": "411b6e23e0dd3262149ce637566e50c3ba61f424bb997164c25c1862c3f603d0",
+            "summary": {
+              "checks": 55762,
+              "failed": 0,
+              "helperAssertions": 50346,
+              "sourceRows": 6947,
+              "uniqueInputObjects": 6947,
+              "freshNodeExecutions": 20841,
+              "methods": 137,
+              "allSourceRows": 60865,
+              "allUniqueInputs": 60792,
+              "allDuplicateRows": 73
+            },
+            "scope": "Root peer of46exact preimages,6947 independently frozen source input/expected objects and explicit seven-method additive crosscheck; SOFA six frozen source component scores and total only. Root replays fresh3public adapters. Excludes clinical rubrics, ambiguous table equalities, NIHSS UN, Barthel mobility/enema wording and patient risk/diagnosis. Exact helper reverse restores all27 prior scopes; realm normalization preserves exact ordered key identities."
+          },
+          "application": {
+            "file": "reports/review-20261003/eight-organ-source-evidence-application-final26.json",
+            "sha256": "4460d9fa07f83af63211052014fa73f12bfb1a3aed0e0bff076925f16b77682b"
+          },
+          "reviewedBankScope": "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "currentBinding": {
+            "source26BankSha256": "785d0b38b826311617e8a88b810b3a06c6b49d7609f255e51a307da9df8f6097",
+            "implementations": [
+              {
+                "file": "apps/website/private/tool-code/has-bled/calculator.js",
+                "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+              },
+              {
+                "file": "apps/dashboard/private/tool-code/has-bled/calculator.js",
+                "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+              },
+              {
+                "file": "apps/command-center/private/tool-code/has-bled/calculator.js",
+                "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+              }
+            ],
+            "subsequentReviewedRebinds": []
+          },
+          "originalFailuresAndScopeQualificationsPreserved": true,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 1536,
+        "actualVmExecutions": 1536,
+        "implementations": [
+          {
+            "app": "website",
+            "id": "has-bled",
+            "file": "apps/website/private/tool-code/has-bled/calculator.js",
+            "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+          },
+          {
+            "app": "dashboard",
+            "id": "has-bled",
+            "file": "apps/dashboard/private/tool-code/has-bled/calculator.js",
+            "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+          },
+          {
+            "app": "command-center",
+            "id": "has-bled",
+            "file": "apps/command-center/private/tool-code/has-bled/calculator.js",
+            "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+          }
+        ],
+        "qualifications": [
+          "Exact integer weighted sum of 512 stored selected category/flag tuples for has-bled. Clinical item eligibility/administration, labels/rubrics, risk categories, prognosis, treatment and complete instrument conformance excluded. Clinical, professional translation and source rights approval not performed.",
+          "NIHSS UN handling, GBS exact25 lab boundary, SOFA source boundaries/dose rubrics, Barthel yard/meter and enema rubrics, Katz original1963A–G and clinical grades/probabilities are not approved by score tests. Separately owned field/source-edition patches must be reviewed and composed.",
+          "All862 historical fixtures and their tolerances remain byte-identical. Four inline samples are only a subset of this complete hashed bank.",
+          "Synthetic selected-category combinations may not be clinically admissible patient assessments. No professional/clinical/rights/full-method approval inferred."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+    },
+    "limits": "O HAS-BLED original estima sangramento maior em um ano em fibrilação atrial. O total não representa contraindicação automática à anticoagulação; definições dos fatores e orientação contemporânea devem corresponder à versão. A calibração e o tratamento antitrombótico da população influenciam sua interpretação.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.007Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Tabela completa de definições e orientação ESC 2024 ainda não lidas neste lote. Texto do resumo recuperado registra queda de Hb > 2 g/L; unidade necessita original integral, não assumir g/dL pela convenção."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/has-bled/calculator.js",
+    "bytes": 5490,
+    "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "0ff8e4fa0959ff7ed566c156b4ce27e59f48eac3d330a7f6c5fc4ef45732cd7b",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "03b53d5ecaf3acca429cb952b8aa192103b5aa6b186d49a5e9d4859c9063164d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "03b53d5ecaf3acca429cb952b8aa192103b5aa6b186d49a5e9d4859c9063164d",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
