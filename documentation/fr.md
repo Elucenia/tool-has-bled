@@ -89,3 +89,38 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque hémorragique élevé
+
+| Détails du résultat | |
+| --- | --- |
+| Hémorragie majeure | 12,50 ou plus pour 100 patients-années |
+
+Facteurs modifiables : contrôler la pression artérielle, stabiliser l’INR ou passer à un AOD, revoir les antiagrégants/AINS, réduire l’alcool.
+
+
+### 2
+
+Risque hémorragique élevé
+
+| Détails du résultat | |
+| --- | --- |
+| Hémorragie majeure | 3,74 pour 100 patients-années |
+
+Facteurs modifiables : contrôler la pression artérielle.
+
+
+### 3
+
+Risque hémorragique faible
+
+| Détails du résultat | |
+| --- | --- |
+| Hémorragie majeure | 1,13 pour 100 patients-années |
+

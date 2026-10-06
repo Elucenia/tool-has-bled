@@ -297,7 +297,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "HASBLED/Pisters 2010:9 pontos; renal/hepático/drogas/álcoolseparados; contexto ESC 2024",
-    "implementationVersion": "has-bled@native-2026-10-03+959eb61ec254",
+    "implementationVersion": "has-bled@native-2026-10-05+cade6b6295b1",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/20299623/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -588,7 +588,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+      "implementationHash": "cade6b6295b1f7fd4f0d3fdbf6c07880cc4b0d2f8222bb3b71cd967bb7141fdb",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "has-bled@native-2026-10-03+959eb61ec254",
+          "previousImplementationHash": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c",
+          "implementationHash": "cade6b6295b1f7fd4f0d3fdbf6c07880cc4b0d2f8222bb3b71cd967bb7141fdb",
+          "scientificBodySha256": "8d32e3c678d20bb84b6aab210fc6f7d27a04f85ff958d198d7fa821393584125",
+          "metadataContractHash": "0955faf95d37de852bc460cd656b9f67d2fa3aacc8046e541088f03a45161b88",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O HAS-BLED original estima sangramento maior em um ano em fibrilação atrial. O total não representa contraindicação automática à anticoagulação; definições dos fatores e orientação contemporânea devem corresponder à versão. A calibração e o tratamento antitrombótico da população influenciam sua interpretação.",
     "sourceLimitEvidence": {
@@ -607,20 +635,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/has-bled/calculator.js",
-    "bytes": 5490,
-    "sha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c"
+    "bytes": 5695,
+    "sha256": "cade6b6295b1f7fd4f0d3fdbf6c07880cc4b0d2f8222bb3b71cd967bb7141fdb"
   },
-  "sourceToolSha256": "0ff8e4fa0959ff7ed566c156b4ce27e59f48eac3d330a7f6c5fc4ef45732cd7b",
+  "sourceToolSha256": "bd6ef7775d57a0133e3f1867e39ebcdeac2f0b636cb2d730f82949408a28c69f",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "03b53d5ecaf3acca429cb952b8aa192103b5aa6b186d49a5e9d4859c9063164d",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "03b53d5ecaf3acca429cb952b8aa192103b5aa6b186d49a5e9d4859c9063164d",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

@@ -1,0 +1,215 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "has-bled",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "a37a2f0f0ca6c7865f3745236a28076b36a5488f",
+    "oldEngineSha256": "959eb61ec254ef9576a8e7d57c64c710854c3de5399839f9d0a02d08b569936c",
+    "currentEngineSha256": "cade6b6295b1f7fd4f0d3fdbf6c07880cc4b0d2f8222bb3b71cd967bb7141fdb"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Todos os itens: 9 pontos, alto risco",
+      "input": {
+        "h": true,
+        "rim": true,
+        "fig": true,
+        "avc": true,
+        "sang": true,
+        "inr": true,
+        "idoso": true,
+        "drogas": true,
+        "alcool": true
+      },
+      "publicOutput": {
+        "id": "has-bled",
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "raw": {
+          "score": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 9
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "level": "high",
+        "verdict": "Alto risco de sangramento",
+        "rows": [
+          [
+            "Sangramento maior",
+            "12,50 ou mais por 100 pacientes-ano"
+          ]
+        ],
+        "note": "Fatores modificáveis: controlar a pressão, estabilizar o INR ou trocar por DOAC, rever antiagregantes/AINEs, reduzir o álcool.",
+        "raw": {
+          "score": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+      "input": {
+        "h": true,
+        "avc": true,
+        "idoso": true,
+        "rim": false,
+        "fig": false,
+        "sang": false,
+        "inr": false,
+        "drogas": false,
+        "alcool": false
+      },
+      "publicOutput": {
+        "id": "has-bled",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 3
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "level": "high",
+        "verdict": "Alto risco de sangramento",
+        "rows": [
+          [
+            "Sangramento maior",
+            "3,74 por 100 pacientes-ano"
+          ]
+        ],
+        "note": "Fatores modificáveis: controlar a pressão.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Nenhum fator: 0 ponto, risco baixo",
+      "input": {
+        "h": false,
+        "rim": false,
+        "fig": false,
+        "avc": false,
+        "sang": false,
+        "inr": false,
+        "idoso": false,
+        "drogas": false,
+        "alcool": false
+      },
+      "publicOutput": {
+        "id": "has-bled",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "score": 0
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "HAS-BLED",
+        "level": "low",
+        "verdict": "Risco de sangramento baixo",
+        "rows": [
+          [
+            "Sangramento maior",
+            "1,13 por 100 pacientes-ano"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

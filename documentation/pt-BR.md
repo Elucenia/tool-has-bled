@@ -89,3 +89,38 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Alto risco de sangramento
+
+| Detalhes do resultado | |
+| --- | --- |
+| Sangramento maior | 12,50 ou mais por 100 pacientes-ano |
+
+Fatores modificáveis: controlar a pressão, estabilizar o INR ou trocar por DOAC, rever antiagregantes/AINEs, reduzir o álcool.
+
+
+### 2
+
+Alto risco de sangramento
+
+| Detalhes do resultado | |
+| --- | --- |
+| Sangramento maior | 3,74 por 100 pacientes-ano |
+
+Fatores modificáveis: controlar a pressão.
+
+
+### 3
+
+Risco de sangramento baixo
+
+| Detalhes do resultado | |
+| --- | --- |
+| Sangramento maior | 1,13 por 100 pacientes-ano |
+

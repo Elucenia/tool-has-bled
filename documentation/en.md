@@ -89,3 +89,38 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+High bleeding risk
+
+| Result details | |
+| --- | --- |
+| Major bleeding | 12.50 or more per 100 patient-years |
+
+Modifiable factors: control blood pressure, stabilize INR or switch to DOAC, review antiplatelets/NSAIDs, reduce alcohol.
+
+
+### 2
+
+High bleeding risk
+
+| Result details | |
+| --- | --- |
+| Major bleeding | 3.74 per 100 patient-years |
+
+Modifiable factors: control blood pressure.
+
+
+### 3
+
+Low bleeding risk
+
+| Result details | |
+| --- | --- |
+| Major bleeding | 1.13 per 100 patient-years |
+

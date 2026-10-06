@@ -1,0 +1,988 @@
+{
+  "id": "has-bled",
+  "implementationVersion": "has-bled@native-2026-10-05+cade6b6295b1",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangramento maior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "12,50 ou mais por 100 pacientes-ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto risco de sangramento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fatores modificáveis: controlar a pressão, estabilizar o INR ou trocar por DOAC, rever antiagregantes/AINEs, reduzir o álcool.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangramento maior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3,74 por 100 pacientes-ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto risco de sangramento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Fatores modificáveis: controlar a pressão.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangramento maior",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,13 por 100 pacientes-ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risco de sangramento baixo",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major bleeding",
+                "locale": "en",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "12.50 or more per 100 patient-years",
+                "locale": "en",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High bleeding risk",
+            "locale": "en",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Modifiable factors: control blood pressure, stabilize INR or switch to DOAC, review antiplatelets/NSAIDs, reduce alcohol.",
+            "locale": "en",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major bleeding",
+                "locale": "en",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3.74 per 100 patient-years",
+                "locale": "en",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "High bleeding risk",
+            "locale": "en",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Modifiable factors: control blood pressure.",
+            "locale": "en",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Major bleeding",
+                "locale": "en",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1.13 per 100 patient-years",
+                "locale": "en",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Low bleeding risk",
+            "locale": "en",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangrado mayor",
+                "locale": "es",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "12,50 o más por 100 pacientes-año",
+                "locale": "es",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto riesgo de sangrado",
+            "locale": "es",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Factores modificables: controlar la presión, estabilizar el INR o cambiar a DOAC, revisar antiagregantes/AINEs, reducir el alcohol.",
+            "locale": "es",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangrado mayor",
+                "locale": "es",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3,74 por 100 pacientes-año",
+                "locale": "es",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto riesgo de sangrado",
+            "locale": "es",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Factores modificables: controlar la presión.",
+            "locale": "es",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sangrado mayor",
+                "locale": "es",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1,13 por 100 pacientes-año",
+                "locale": "es",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Riesgo bajo de sangrado",
+            "locale": "es",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hémorragie majeure",
+                "locale": "fr",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "12,50 ou plus pour 100 patients-années",
+                "locale": "fr",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque hémorragique élevé",
+            "locale": "fr",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Facteurs modifiables : contrôler la pression artérielle, stabiliser l’INR ou passer à un AOD, revoir les antiagrégants/AINS, réduire l’alcool.",
+            "locale": "fr",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hémorragie majeure",
+                "locale": "fr",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3,74 pour 100 patients-années",
+                "locale": "fr",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque hémorragique élevé",
+            "locale": "fr",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Facteurs modifiables : contrôler la pression artérielle.",
+            "locale": "fr",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Hémorragie majeure",
+                "locale": "fr",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1,13 pour 100 patients-années",
+                "locale": "fr",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Risque hémorragique faible",
+            "locale": "fr",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Schwere Blutung",
+                "locale": "de",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "12,50 oder mehr pro 100 Patientenjahre",
+                "locale": "de",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Blutungsrisiko",
+            "locale": "de",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Modifizierbare Faktoren: Blutdruck kontrollieren, INR stabilisieren oder auf DOAK umstellen, Thrombozytenaggregationshemmer/NSAR überprüfen, Alkohol reduzieren.",
+            "locale": "de",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Schwere Blutung",
+                "locale": "de",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3,74 pro 100 Patientenjahre",
+                "locale": "de",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hohes Blutungsrisiko",
+            "locale": "de",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Modifizierbare Faktoren: Blutdruck kontrollieren.",
+            "locale": "de",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Schwere Blutung",
+                "locale": "de",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1,13 pro 100 Patientenjahre",
+                "locale": "de",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Niedriges Blutungsrisiko",
+            "locale": "de",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sanguinamento maggiore",
+                "locale": "it",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "12,50 o più per 100 pazienti-anno",
+                "locale": "it",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto rischio di sanguinamento",
+            "locale": "it",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Fattori modificabili: controllare la pressione, stabilizzare l’INR o passare a DOAC, rivedere antiaggreganti/FANS, ridurre l’alcol.",
+            "locale": "it",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sanguinamento maggiore",
+                "locale": "it",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3,74 per 100 pazienti-anno",
+                "locale": "it",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Alto rischio di sanguinamento",
+            "locale": "it",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "Fattori modificabili: controllare la pressione.",
+            "locale": "it",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Sanguinamento maggiore",
+                "locale": "it",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1,13 per 100 pazienti-anno",
+                "locale": "it",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Rischio di sanguinamento basso",
+            "locale": "it",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نزف كبير",
+                "locale": "ar",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "١٢٫٥٠ أو أكثر لكل 100 مريض-سنة",
+                "locale": "ar",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر نزف مرتفع",
+            "locale": "ar",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "العوامل القابلة للتعديل: ضبط الضغط، تثبيت INR أو التحويل إلى DOAC، مراجعة مضادات الصفيحات/NSAIDs، تقليل الكحول.",
+            "locale": "ar",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نزف كبير",
+                "locale": "ar",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "٣٫٧٤ لكل 100 مريض-سنة",
+                "locale": "ar",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر نزف مرتفع",
+            "locale": "ar",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "العوامل القابلة للتعديل: ضبط الضغط.",
+            "locale": "ar",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نزف كبير",
+                "locale": "ar",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "١٫١٣ لكل 100 مريض-سنة",
+                "locale": "ar",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "خطر نزف منخفض",
+            "locale": "ar",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "zh",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "每 100 患者年 12.50 或以上",
+                "locale": "zh",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "出血高风险",
+            "locale": "zh",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "可调整因素：控制血压，稳定 INR 或改用 DOAC，复核抗血小板药/NSAIDs，减少饮酒。",
+            "locale": "zh",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "zh",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3.74 每 100 患者-年",
+                "locale": "zh",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "出血高风险",
+            "locale": "zh",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "可调整因素：控制血压。",
+            "locale": "zh",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "zh",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1.13 每 100 患者-年",
+                "locale": "zh",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "出血风险低",
+            "locale": "zh",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "ja",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "100患者年あたり12.50以上",
+                "locale": "ja",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高出血リスク",
+            "locale": "ja",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "修正可能な因子：血圧をコントロールし、INRを安定させるかDOACへ変更、抗血小板薬/NSAIDsを見直し、飲酒を減らす。",
+            "locale": "ja",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "ja",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3.74 / 100患者年",
+                "locale": "ja",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高出血リスク",
+            "locale": "ja",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "修正可能な因子：血圧をコントロールする。",
+            "locale": "ja",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "大出血",
+                "locale": "ja",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1.13 / 100患者年",
+                "locale": "ja",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "出血リスクが低い",
+            "locale": "ja",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Todos os itens: 9 pontos, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख रक्तस्राव",
+                "locale": "hi",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "100 रोगी-वर्षों में 12.50 या अधिक",
+                "locale": "hi",
+                "template": "documented-authored-71350fdd5f774f06e460",
+                "sourceNumbers": [
+                  12.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च रक्तस्राव जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "संशोधित किए जा सकने वाले कारक: रक्तचाप नियंत्रित करें, INR को स्थिर करें या DOAC पर स्विच करें, एंटीप्लेटलेट्स/NSAIDs की समीक्षा करें, शराब कम करें।",
+            "locale": "hi",
+            "template": "documented-authored-8d133a3e620b259f5157"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "HAS não controlada + AVC + idade > 65: 3 pontos = 3,74 por 100 pacientes-ano",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख रक्तस्राव",
+                "locale": "hi",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "3.74 प्रति 100 रोगी-वर्ष",
+                "locale": "hi",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  3.74
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उच्च रक्तस्राव जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-8b5f7b2170a47fca56ef"
+          },
+          "note": {
+            "text": "संशोधित किए जा सकने वाले कारक: रक्तचाप नियंत्रित करें।",
+            "locale": "hi",
+            "template": "documented-authored-4270b89691f0aea9892f"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Nenhum fator: 0 ponto, risco baixo",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रमुख रक्तस्राव",
+                "locale": "hi",
+                "template": "documented-authored-5259b5fde75a9b32f406"
+              },
+              "value": {
+                "text": "1.13 प्रति 100 रोगी-वर्ष",
+                "locale": "hi",
+                "template": "documented-authored-5da3636496f307443153",
+                "sourceNumbers": [
+                  1.13
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कम रक्तस्राव जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-65749b8aacf415f4741f"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}
